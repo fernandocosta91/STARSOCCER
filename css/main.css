@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pagina1{
+    font-family: 'Knewave';
+    background-image: url(../img/7513-futbol.jpg);
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;          
+}
+h2{         
+    color: red;
+    text-align: center;
+    font-family: initial;
+    padding: 2rem;
+    transition: 1s;   
+}
+
+h2:hover {
+    color: white;
+    font-size: 27px;
+}
+    
+.menues, .menues2 {
+    list-style-type: none;
+    display: flex;
+    gap: 380px;
+    justify-content: center;
+    color: darkgray;  
+    font-size: 25px;
+                    
+}
+.menues__item a {
+    font-size: 25px;
+    transition: font-size 0.1s ease;
+    text-decoration: none;
+    color: white;
+    transition: all 1s;
+}
+
+.menues__item a:hover {
+    font-size: 27px;
+    color: red;
+    
+    
+}
+
+.starsoccer{
+    font-size: 9rem;
+    display: flex;
+    justify-content: center;
+    margin: 12rem;
+}  
+    
+.contacto5{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+       
+    
+}
+.copy{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-family: 'Times New Roman', Times, serif;    
+ }
+ .adidas{
+    display: flex;     
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    margin-top: 330px;   
+ }
+ .nike{
+    display: flex;    
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    margin-left: 1700px;
+    margin-top: 370px;      
+
+ }
+ .pagina2{
+    font-family: 'Knewave';
+    background-image: url(../img/pagina2.jpg);    
+    background-attachment: fixed;
+    background-size: cover;
+
+ }
+ .acercade{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: red;
+ }
+ .menues2__item a {
+    font-size: 25px;
+    transition: font-size 0.1s ease;
+    text-decoration: none;
+    color: white;
+    transition: all 1s;
+}
+
+.menues2__item a:hover {
+    font-size: 27px;
+    color: red;
+    
+    
+}
+ .sectioncaja{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;    
+    text-align: center;    
+
+ }
+ .caja{    
+    padding: 25px;
+    font-size: 25px;              
+ }
+ .introduccion{
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+ }
+ 
+ @media screen and (max-width: 750px) {  
+
+    .pagina1{
+                background-image: url(../img/fondo\ negro.png);
+                               
+    }
+    
+    .starsoccer {
+        display: flex;
+        font-size: 6rem;
+        justify-content: center;    
+    }
+           
+    
+    .adidas {
+        display: none;
+    }
+
+    .nike {
+        display: none;
+    }
+
+    
+    .nav {
+       
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        padding: auto;
+        
+    }
+            
+    .menues {
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        gap: 150%;
+        padding: 5rem;
+        
+    }
+    .menues__item {
+        padding: 0.3rem;        
+        color: aliceblue;
+                
+    }
+    .menues__item a {
+        font-size: 35px;
+    }
+
+    .nav2 {
+        display: none;
+    }
+    .sectioncaja{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;    
+        text-align: center;    
+    
+     }
+     .caja{    
+        padding: 25px;
+        font-size: 20px;              
+     }      
+    
+    
+    
+}
+  
+  @media screen and (max-width: 480px) {  
+
+    .pagina1{
+                background-image: url(../img/fondo\ negro.png);
+                               
+    }
+    
+    .starsoccer {
+        display: flex;
+        font-size: 3rem;
+        justify-content: center;    
+    }
+           
+    
+    .adidas {
+        display: none;
+    }
+
+    .nike {
+        display: none;
+    }
+
+    
+    .nav {
+       
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        padding: auto;
+    }
+        
+    .menues {
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        gap: 150%;
+        padding: 5rem;
+    }
+    .menues__item {
+        padding: 0.3rem;        
+        color: aliceblue;        
+    }
+    .menues__item a {
+        font-size: 25px;
+    }
+}
+
+
+
+    
+ 
+ 
+ 
+    
+ 
+
+
+
