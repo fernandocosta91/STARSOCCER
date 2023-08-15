@@ -1,0 +1,43 @@
+.pagina2{
+    font-family: 'Knewave';
+    background-image: url(../img/pagina2.jpg);    
+    background-attachment: fixed;
+    background-size: cover;
+
+    header{
+
+        .acercade{
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            color: red;
+        }
+
+        .introduccion{
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+         }
+
+
+    }
+
+    main{
+        section{
+            .sectioncaja{
+                display: grid;
+                 grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                width: 90%;
+                margin: 0 auto;
+                padding: 20px;    
+                text-align: center; 
+
+                .caja{    
+                    padding: 25px;
+                    font-size: 25px;
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,74 @@
+.pagina1 {
+    font-family: 'Knewave';
+    background-image: url(../img/7513-futbol.jpg);
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+
+    @include tablet {
+
+        background-image: url(../img/fondo\ negro.png);
+    }
+
+    @include mobile {
+
+        background-image: url(../img/fondo\ negro.png);
+
+    }
+    
+    main {
+        section{
+            .adidas{
+            display: flex;     
+            width: 250px;
+            height: 250px;
+            position: fixed;
+            margin-top: 330px;
+            
+            @include tablet {
+                display: none;
+            }
+
+            @include mobile {
+                display: none;
+            }
+         }
+            .nike{
+            display: flex;    
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            margin-left: 1700px;
+            margin-top: 370px;
+
+            @include tablet {
+                display: none;
+            }
+
+            @include mobile {
+                display: none;
+            }
+
+        }
+            .starsoccer{
+        font-size: 9rem;
+        display: flex;
+        justify-content: center;
+        margin: 12rem;
+
+        @include tablet {
+            display: flex;        
+            font-size: 6rem;
+            justify-content: center;
+        }
+
+        @include mobile {
+            display: flex;
+            font-size: 3rem;
+            justify-content: center;
+        }
+        }  
+
+}
+}
+}
