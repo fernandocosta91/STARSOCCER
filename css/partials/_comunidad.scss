@@ -37,6 +37,14 @@
                     min-height: 20vh;
                     border-color: green;
 
+                    @include tablet{
+                        display: none;
+                    }
+
+                    @include mobile{
+                        display: none;
+                    }
+
                     .tabla1{    
                         font-size: 25px;
                         table-layout: fixed;
@@ -64,9 +72,7 @@
 
             .articulo1{
 
-                display: flex;
-                padding-left:370px;
-                padding-right: 370px;
+                display: flex;                
                 padding-top: 30px;
                 text-align: center;
                 color: rgb(255, 255, 255);

@@ -30,7 +30,7 @@
             padding: auto;
 
         }
-            .menues, .menues2 {
+            .menues {
             list-style-type: none;
             display: flex;
             gap: 380px;
@@ -81,22 +81,90 @@
                         color: red;
                     }
                     }
+                    
             }
+            .menues__item a {
+                font-size: 25px;
+                transition: font-size 0.1s ease;
+                text-decoration: none;
+                color: white;
+                transition: all 1s;
+            }
+            
+            .menues__item a:hover {
+                font-size: 27px;
+                color: red;
+                
+                
+            }
+            
         }
     }
+    .nav2 {
+       
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;        
+        padding: auto;
 
+        .menues2{
 
-    h2 {
-    color: red;
-    text-align: center;
-    font-family: initial;
-    padding: 2rem;
-    transition: 1s;
+            list-style-type: none;
+            display: flex;
+            gap: 380px;
+            justify-content: center;
+            color: darkgray;
+            font-size: 25px;
 
-    &:hover {
-        color: white;
-        font-size: 27px;
+            @include tablet {
+                display: flex;        
+                flex-direction: column;
+                align-items: center;
+                gap: 150%;
+                padding: 5rem;
+            }
+        
+            @include mobile {
+                display: flex;        
+                flex-direction: column;
+                align-items: center;
+                gap: 150%;
+                padding: 5rem;
+            }
+
+            .menues2__item a {
+            font-size: 25px;
+            transition: font-size 0.1s ease;
+            text-decoration: none;
+            color: white;
+            transition: all 1s;
+            }
+        
+            .menues2__item a:hover {
+            font-size: 27px;
+            color: red;
+            
+            
+            }
     }
-}
+    }
+    h2 {
+        color: red;
+        text-align: center;
+        font-family: initial;
+        padding: 2rem;       
+        
     
 }
+    
+.focus-in-contract-bck{animation:focus-in-contract-bck 4s cubic-bezier(.25,.46,.45,.94) infinite both}
+
+
+@keyframes focus-in-contract-bck{0%{letter-spacing:1em;transform:translateZ(300px);filter:blur(12px);opacity:0}100%{transform:translateZ(12px);filter:blur(0);opacity:1}}
+    }

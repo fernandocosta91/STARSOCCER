@@ -1,4 +1,8 @@
 .pagina5{
+    font-family: 'Knewave';
+    background-image: url(../img/pagina5.png);    
+    background-attachment: fixed;
+    background-size: cover;
 
     header{
 
@@ -10,9 +14,7 @@
          }
          .parrafoasistencia4{
             display: flex;
-            padding-top: 50px ;    
-            padding-left: 500px;
-            padding-right: 500px;
+            padding-top: 50px ;  
             padding-bottom: 50px;
             text-align: center;
             color: rgb(255, 255, 255);
@@ -26,14 +28,22 @@
             display: flex;
             justify-content: center;
             color: red;
+
+            .cuadrotexto{
+                width: 400px;
+                height: 400px;
+                margin: auto;
+                padding: 53px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                border: 3px solid black;
+            }
                         
          }
 
          .ayuda4{
             display: flex;
-            padding-top: 50px ;    
-            padding-left: 500px;
-            padding-right: 500px;
+            padding-top: 50px ;                
             padding-bottom: 50px;
             text-align: center;
             color: rgb(255, 255, 255);

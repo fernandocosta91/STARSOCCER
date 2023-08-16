@@ -35,7 +35,7 @@
     padding: auto;
   }
 }
-header .nav .menues, header .nav .menues2 {
+header .nav .menues {
   list-style-type: none;
   display: flex;
   gap: 380px;
@@ -44,7 +44,7 @@ header .nav .menues, header .nav .menues2 {
   font-size: 25px;
 }
 @media screen and (max-width: 768px) {
-  header .nav .menues, header .nav .menues2 {
+  header .nav .menues {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +53,7 @@ header .nav .menues, header .nav .menues2 {
   }
 }
 @media screen and (max-width: 576px) {
-  header .nav .menues, header .nav .menues2 {
+  header .nav .menues {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,29 +61,89 @@ header .nav .menues, header .nav .menues2 {
     padding: 5rem;
   }
 }
-header .nav .menues .menues__item, header .nav .menues2 .menues__item {
+header .nav .menues .menues__item {
   padding: 0.3rem;
   color: aliceblue;
 }
 @media screen and (max-width: 768px) {
-  header .nav .menues .menues__item, header .nav .menues2 .menues__item {
+  header .nav .menues .menues__item {
     padding: 0.3rem;
     color: aliceblue;
   }
 }
 @media screen and (max-width: 576px) {
-  header .nav .menues .menues__item, header .nav .menues2 .menues__item {
+  header .nav .menues .menues__item {
     padding: 0.3rem;
     color: aliceblue;
   }
 }
-header .nav .menues .menues__item:link, header .nav .menues .menues__item:visited, header .nav .menues2 .menues__item:link, header .nav .menues2 .menues__item:visited {
+header .nav .menues .menues__item:link, header .nav .menues .menues__item:visited {
   font-size: 25px;
   transition: font-size 0.1s ease, color 1s;
   text-decoration: none;
   color: white;
 }
-header .nav .menues .menues__item:link:hover, header .nav .menues .menues__item:link:active, header .nav .menues .menues__item:visited:hover, header .nav .menues .menues__item:visited:active, header .nav .menues2 .menues__item:link:hover, header .nav .menues2 .menues__item:link:active, header .nav .menues2 .menues__item:visited:hover, header .nav .menues2 .menues__item:visited:active {
+header .nav .menues .menues__item:link:hover, header .nav .menues .menues__item:link:active, header .nav .menues .menues__item:visited:hover, header .nav .menues .menues__item:visited:active {
+  font-size: 27px;
+  color: red;
+}
+header .nav .menues .menues__item a {
+  font-size: 25px;
+  transition: font-size 0.1s ease;
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+}
+header .nav .menues .menues__item a:hover {
+  font-size: 27px;
+  color: red;
+}
+header .nav2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: auto;
+}
+header .nav2 .menues2 {
+  list-style-type: none;
+  display: flex;
+  gap: 380px;
+  justify-content: center;
+  color: darkgray;
+  font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  header .nav2 .menues2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150%;
+    padding: 5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .nav2 .menues2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150%;
+    padding: 5rem;
+  }
+}
+header .nav2 .menues2 .menues2__item a {
+  font-size: 25px;
+  transition: font-size 0.1s ease;
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+}
+header .nav2 .menues2 .menues2__item a:hover {
   font-size: 27px;
   color: red;
 }
@@ -92,11 +152,22 @@ header h2 {
   text-align: center;
   font-family: initial;
   padding: 2rem;
-  transition: 1s;
 }
-header h2:hover {
-  color: white;
-  font-size: 27px;
+header .focus-in-contract-bck {
+  animation: focus-in-contract-bck 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
 
 .pagina1 {
@@ -198,9 +269,37 @@ header h2:hover {
   padding: 20px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .pagina2 main section .sectioncaja {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .pagina2 main section .sectioncaja {
+    padding: 5px;
+  }
+}
 .pagina2 main section .sectioncaja .caja {
   padding: 25px;
   font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  .pagina2 main section .sectioncaja .caja {
+    padding: 25px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .pagina2 main section .sectioncaja .caja {
+    padding: 25px;
+    font-size: 15px;
+  }
 }
 
 .pagina3 {
@@ -253,6 +352,16 @@ header h2:hover {
   min-height: 20vh;
   border-color: green;
 }
+@media screen and (max-width: 768px) {
+  .pagina4 main section .container1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .pagina4 main section .container1 {
+    display: none;
+  }
+}
 .pagina4 main section .container1 .tabla1 {
   font-size: 25px;
   table-layout: fixed;
@@ -268,8 +377,6 @@ header h2:hover {
 }
 .pagina4 main .articulo1 {
   display: flex;
-  padding-left: 370px;
-  padding-right: 370px;
   padding-top: 30px;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -285,6 +392,12 @@ header h2:hover {
   color: red;
 }
 
+.pagina5 {
+  font-family: "Knewave";
+  background-image: url(../img/pagina5.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
 .pagina5 header .asistencia {
   display: flex;
   justify-content: center;
@@ -294,8 +407,6 @@ header h2:hover {
 .pagina5 header .parrafoasistencia4 {
   display: flex;
   padding-top: 50px;
-  padding-left: 500px;
-  padding-right: 500px;
   padding-bottom: 50px;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -305,11 +416,18 @@ header h2:hover {
   justify-content: center;
   color: red;
 }
+.pagina5 main .formulario2 .cuadrotexto {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  padding: 53px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 3px solid black;
+}
 .pagina5 main .ayuda4 {
   display: flex;
   padding-top: 50px;
-  padding-left: 500px;
-  padding-right: 500px;
   padding-bottom: 50px;
   text-align: center;
   color: rgb(255, 255, 255);
