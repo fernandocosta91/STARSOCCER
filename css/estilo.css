@@ -150,8 +150,8 @@ header .nav2 .menues2 .menues2__item a:hover {
 header h2 {
   color: red;
   text-align: center;
-  font-family: initial;
   padding: 2rem;
+  font-size: 2rem;
 }
 header .focus-in-expand-fwd {
   animation: focus-in-expand-fwd 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
@@ -192,7 +192,7 @@ header .focus-in-expand-fwd {
   width: 250px;
   height: 250px;
   position: fixed;
-  margin-top: 330px;
+  margin-top: 300px;
 }
 @media screen and (max-width: 768px) {
   .pagina1 main section .adidas {
@@ -210,7 +210,7 @@ header .focus-in-expand-fwd {
   width: 200px;
   height: 200px;
   margin-left: 1700px;
-  margin-top: 370px;
+  margin-top: 344px;
 }
 @media screen and (max-width: 768px) {
   .pagina1 main section .nike {
