@@ -32,9 +32,8 @@
         }
             .menues {
             list-style-type: none;
-            display: flex;
-            gap: 380px;
-            justify-content: center;
+            display:flex;                                                        
+            justify-content: space-around;
             color: darkgray;
             font-size: 25px;
 
