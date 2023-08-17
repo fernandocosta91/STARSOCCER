@@ -153,18 +153,18 @@ header h2 {
   font-family: initial;
   padding: 2rem;
 }
-header .focus-in-contract-bck {
-  animation: focus-in-contract-bck 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+header .focus-in-expand-fwd {
+  animation: focus-in-expand-fwd 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
-@keyframes focus-in-contract-bck {
+@keyframes focus-in-expand-fwd {
   0% {
-    letter-spacing: 1em;
-    transform: translateZ(300px);
+    letter-spacing: -0.5em;
+    transform: translateZ(-800px);
     filter: blur(12px);
     opacity: 0;
   }
   100% {
-    transform: translateZ(12px);
+    transform: translateZ(0);
     filter: blur(0);
     opacity: 1;
   }
