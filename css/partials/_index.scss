@@ -60,12 +60,15 @@
             display: flex;        
             font-size: 6rem;
             justify-content: center;
+            margin-top: 50px;
         }
 
         @include mobile {
             display: flex;
             font-size: 3rem;
             justify-content: center;
+            margin-top: 70px;
+           
         }
         }  
 
