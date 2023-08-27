@@ -186,10 +186,11 @@ header .focus-in-expand-fwd {
 }
 .pagina1 main section .adidas {
   display: flex;
-  width: 250px;
-  height: 250px;
   position: fixed;
-  margin-top: 300px;
+  width: 8%;
+  height: 8%;
+  margin-top: 360px;
+  margin-left: 60px;
 }
 @media screen and (max-width: 768px) {
   .pagina1 main section .adidas {
@@ -204,10 +205,10 @@ header .focus-in-expand-fwd {
 .pagina1 main section .nike {
   display: flex;
   position: fixed;
-  width: 200px;
-  height: 200px;
+  width: 15%;
+  height: 15%;
   margin-left: 1700px;
-  margin-top: 344px;
+  margin-top: 350px;
 }
 @media screen and (max-width: 768px) {
   .pagina1 main section .nike {
@@ -393,7 +394,7 @@ header .focus-in-expand-fwd {
 
 .pagina5 {
   font-family: "Knewave";
-  background-image: url(../img/pagina5.png);
+  background-image: url(../img/pagina6.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
